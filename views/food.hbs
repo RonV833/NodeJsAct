@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body style="text-align: center; padding: 2%;background-color: beige;;">
+    <form action="/auth/food" method="post" style="display: inline-block; padding:2%; background-color: rgb(182, 182, 241);">
+        <fieldset style="width: fit-content;">
+        <h3>FOOD ORDER FORM</h3>
+        <label for="food_name">Choose Your Food</label><br>
+        <input type="text" name="food_name" id="food_name"><br><br>
+
+        <label for="price">Price (PhP)</label><br>
+        <input type="number" name="price" id="price"><br><br>
+        <hr>
+
+        <label for="food_category_id">Category</label><br>
+        <select name="food_category_id" id="food_category_id">
+            <option value="1">Appetizers</option>
+            <option value="2">Main Course</option>
+            <option value="3">Desert</option>
+            <option value="4">Side Dishes</option>
+            <option value="5">Drinks</option>
+        </select>
+        <hr>
+
+        <button type="submit">SUBMIT</button>
+        </fieldset>
+    </form><br>
+    <a href="/">BACK HOME</a>
+
+</body>
+</html>
